@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfólio - Tela de Abertura</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow: hidden;
+    }
+
+    /* Tela de abertura */
+    .splash {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(135deg, #0ea5e9, #6366f1); /* azul -> violeta */
+      animation: fadeOut 1s ease-in-out 3s forwards;
+    }
+
+    .splash h1 {
+      color: white;
+      font-size: 48px;
+      animation: fadeIn 1.5s ease-out;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    /* Conteúdo principal */
+    .main-content {
+      display: none;
+      height: 100%;
+      background: linear-gradient(135deg, #e0f2fe, #dbeafe); /* cor combinando */
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .main-content.show {
+      display: block;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .main-content h2 {
+      font-size: 36px;
+      color: #1e3a8a;
+      margin-bottom: 10px;
+    }
+
+    .main-content p {
+      font-size: 18px;
+      color: #475569;
+      margin-bottom: 30px;
+    }
+
+    /* Estilo dos links */
+    .links a {
+      display: inline-block;
+      margin: 10px 15px;
+      padding: 12px 24px;
+      background-color: #3b82f6;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .links a:hover {
+      background-color: #2563eb;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Tela de Abertura -->
+  <div class="splash" id="splash">
+    <h1>Bem-vindo ao meu Portfólio!</h1>
+  </div>
+
+  <!-- Página principal -->
+  <div class="main-content" id="mainContent">
+    <h2>Olá! Bem-Vindo ao meu Portfólio!</h2>
+    <p>Desenvolvedor Web • Designer • Criador de experiências digitais</p>
+
+    <div class="links">
+      <a href="sobre.html">Sobre Mim</a>
+      <a href="./Pagina1/pagina1.html">Conhecimentos</a>
+      <a href="contato.html">Contato</a>
+      <a href="curriculo.pdf" target="_blank">Currículo</a>
+    </div>
+  </div>
+
+  <!-- Script: transição da splash screen -->
+  <script>
+    setTimeout(() => {
+      document.getElementById("splash").style.display = "none";
+      document.getElementById("mainContent").classList.add("show");
+      document.body.style.overflow = 'auto'; // reativa o scroll
+    }, 4000); // 4 segundos
+  </script>
+
+</body>
+</html>
