@@ -1,0 +1,93 @@
+
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 300px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+h1 {
+    color: #0077aa;
+    margin-top: 20px;
+}
+
+
+h3 {
+    margin-top: 10px;
+    color: #333;
+}
+
+
+select {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #0077aa;
+    border-radius: 8px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+select:hover {
+    border-color: #005f8a;
+}
+
+
+#mensagem {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: red;
+}
+
+header {
+    background-color: #2b87af;
+    color: white;
+    text-align: center;
+    padding: 16px;
+}
+.Botao a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #0077aa;
+    color: white;
+    border-radius: 8px;
+    border: 2px solid transparent;
+   
+}
+
+.Botao a:hover {
+    background-color: white;
+    color: #0077aa;
+    border-color: #0077aa;
+}
+
+footer {
+    padding: 16px;
+    text-align: center;
+    background-color: #0077aa;
+    font-size: 16px;
+    color: white;
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#player {
+      display: none; /* Oculta o vídeo (apenas som) */
+    }

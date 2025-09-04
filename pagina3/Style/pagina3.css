@@ -33,10 +33,10 @@ header a:hover {
 }
 
 section {
-    padding: 16px ;
+    padding: 50px ;
     box-shadow: 0 2px 4px;
     border-radius: 8px;
-    margin: 16px 0;
+    margin: 16px 500px;
     text-align: center;
     
     
