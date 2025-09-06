@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfólio - Tela de Abertura</title>
   <style>
-    /* Reset */
+    
     * {
       margin: 0;
       padding: 0;
@@ -20,7 +20,7 @@
       overflow: hidden;
     }
 
-    /* Tela de abertura */
+    
     .splash {
       display: flex;
       align-items: center;
@@ -28,7 +28,7 @@
       height: 100%;
       width: 100%;
       background: linear-gradient(135deg, #0ea5e9, #6366f1);
-      /* azul -> violeta */
+      
       animation: fadeOut 1s ease-in-out 3s forwards;
     }
 
@@ -58,12 +58,12 @@
       }
     }
 
-    /* Conteúdo principal */
+    
     .main-content {
       display: none;
       height: 100%;
       background: linear-gradient(135deg, #e0f2fe, #dbeafe);
-      /* cor combinando */
+      
       padding: 60px 20px;
       text-align: center;
     }
@@ -85,7 +85,7 @@
       margin-bottom: 30px;
     }
 
-    /* Estilo dos links */
+    
     .links a {
       display: inline-block;
       margin: 10px 15px;
@@ -127,13 +127,13 @@
     </div>
   </div>
 
-  <!-- Script: transição da splash screen -->
+  
   <script>
     setTimeout(() => {
       document.getElementById("splash").style.display = "none";
       document.getElementById("mainContent").classList.add("show");
-      document.body.style.overflow = 'auto'; // reativa o scroll
-    }, 4000); // 4 segundos
+      document.body.style.overflow = 'auto'; 
+    }, 3000); 
   </script>
 
 </body>
